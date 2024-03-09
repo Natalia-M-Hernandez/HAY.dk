@@ -1,3 +1,7 @@
+/* CSS COMPARTIDO POR VARIAS PAGINAS */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
 *{
     box-sizing: border-box;
 }
@@ -5,6 +9,7 @@
 
 :root{
     --gris0: #f2f2f2;
+    --gris0transp: #f2f2f2e9;
 }
 
 .material-symbols-outlined {    /* presetIcons */
@@ -15,12 +20,17 @@
     'opsz' 40
 }
 
+
 /* estilos de texto */
 
 .pieFoto{
     padding: 20px;
+    font-family: "Lora", serif;
+    letter-spacing: 2px;
     font-size: 18px;
+    text-align: center;
 }
+
 
 /* body */
 
@@ -31,15 +41,16 @@ body{
     margin: 0px 200px;
 }
 
+
 /* navbar */
 
 .nav{
-    position: fixed;            /* navbar fija */
+    position: sticky;            /* navbar fija */
     top: 0;
     left: 0;
     right: 0;
 
-    background-color: var(--gris0);
+    background-color: var(--gris0transp);
 }
 
 .navContainer{
@@ -63,7 +74,7 @@ body{
 
 .navIconContainer{
     position: absolute;
-    right: 200px;
+    right: 0;
 
     top: 50%;
     transform: translate(0, -50%);
@@ -89,34 +100,53 @@ body{
     height: 36px;
 }
 
-/* contenido inicial */
 
-.contenidoIni{
+/* seccion paginas */
+
+.pagContainer ul{
     display: flex;
-    flex-direction: column;
+    gap: 30px;                  /* distancia entre items */
+    align-items: center;        /* alineacion vertical */
+    justify-content: center;    /* alineacion horizontal */
+    padding: 10px;
 
-    align-items: center;
-    justify-content: center;
-
-    margin-top: 130px;
-}
-
-.contenidoIni img{
+    height: 50px;
     width: 100%;
 }
 
-.contenidoItems{
+.pagText{
+    font-size: 12px;
+}
+
+.lineaTipoA{
+    margin-top: 80px;
+}
+
+.lineaTipoB{
+    margin-bottom: 30px;
+}
+
+
+/* seccion redes */
+
+.followUs a{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.mediaContainer{
     display: flex;
-    flex-direction: row;
+    gap: 30px;                  /* distancia entre items */
+    align-items: center;        /* alineacion vertical */
+    justify-content: center;    /* alineacion horizontal */
+    padding: 10px;
 
-    align-items: center;
-    justify-content: center;
-
-    gap: 50px;
+    height: 50px;
     width: 100%;
+
+    margin-bottom: 50px;
 }
 
-.contenidoItems img{
-    width: 100%;
-    height: 395px;
+.mediaContainer img{
+    height: 36px;
 }

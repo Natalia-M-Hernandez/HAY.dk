@@ -15,12 +15,23 @@
     'opsz' 40
 }
 
+/* estilos de texto */
+
+.pieFoto{
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* body */
+
 body{
     background-color: var(--gris0);
     font-family: "Montserrat", sans-serif;
     font-weight: 450;
     margin: 0px 200px;
 }
+
+/* navbar */
 
 .nav{
     position: fixed;            /* navbar fija */
@@ -78,8 +89,34 @@ body{
     height: 36px;
 }
 
-.test{
-    background-color: aqua;
-    margin-top: 50px;
-    height: 1000px;
+/* contenido inicial */
+
+.contenidoIni{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 130px;
+}
+
+.contenidoIni img{
+    width: 100%;
+}
+
+.contenidoItems{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+    width: 100%;
+}
+
+.contenidoItems img{
+    width: 100%;
+    height: 395px;
 }

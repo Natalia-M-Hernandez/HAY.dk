@@ -31,6 +31,25 @@
     text-align: center;
 }
 
+.textoCorrido{
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.textoSeccion{
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    letter-spacing: 8px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 50px;
+}
+
 
 /* body */
 

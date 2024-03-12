@@ -1,0 +1,102 @@
+/* CSS ESPECIFICO DE LA PAGINA PRODUCTS*/
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+/* seccion texto New Furniture */
+.newFurnitureText{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.newFurnitureText p{
+    width: 50%;
+}
+
+
+/* seccion galeria de productos */
+
+.productsGallery{
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 img3 img3"
+    "img4 img4 img3 img3"
+    "img4 img4 img5 img6";
+
+    margin-top: 30px;
+}
+
+.imgGallery{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.img1{
+    grid-area: img1;
+    padding-left: 0;
+}
+
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+    padding-right: 0;
+}
+
+.img4{
+    grid-area: img4;
+    padding-left: 0;
+}
+
+.img5{
+    grid-area: img5;
+}
+
+.img6{
+    grid-area: img6;
+    padding-right: 0;
+}
+
+
+
+
+/* seccion productos fav */
+
+.productsFav{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+    width: 100%;
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.productsFav a{
+    width: 100%;
+}
+
+.productsFav img{
+    width: 100%;
+    height: 395px;
+}
+
+.favItem{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
